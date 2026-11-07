@@ -241,7 +241,6 @@ Before sharing the project:
 python -m venv venv
 venv\Scripts\activate.bat
 pip install -r requirements.txt
-copy .env.example .env
 notepad .env
 streamlit run app.py
 ```
