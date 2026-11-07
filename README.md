@@ -186,22 +186,35 @@ If `chroma_db/` is deleted, the application can rebuild the vector store from th
 
 ## 10. Optional component checks
 
-The project root may contain test scripts such as:
+## Component Testing
 
-- `test_llm.py`
-- `test_rag.py`
-- `test_agentic_rag.py`
-- `test_bug_finder_rag.py`
-- `test_style_rag.py`
-- `test_fixer_rag.py`
-- `test_test_writer_rag.py`
+The `tests/` directory contains individual verification scripts used during development to check the functionality of the project's major components.
+
+| Test file | Component verified |
+|---|---|
+| `test_llm.py` | Groq LLM integration |
+| `test_rag.py` | ChromaDB vector retrieval |
+| `test_agentic_rag.py` | Agentic RAG workflow |
+| `test_bug_finder_rag.py` | Bug-Finder Agent |
+| `test_style_rag.py` | Style/Lint Agent |
+| `test_fixer_rag.py` | Fixer Agent |
+| `test_test_writer_rag.py` | Test-Writer Agent |
+
+These scripts are optional and are not required to launch the Streamlit application.
+
+To execute an individual component test, activate the virtual environment, configure the Groq API key in `.env`, and run the corresponding script from the project root.
+
+For example:
+
+```cmd
+python tests\test_llm.py
+python tests\test_agentic_rag.py
+```
+
+Some tests require an active internet connection and a valid Groq API key.
 
 These are development/verification scripts for checking individual components. They are not required to launch the Streamlit interface. Run a script from the project root with the virtual environment activated, for example:
 
-```cmd
-python test_llm.py
-python test_agentic_rag.py
-```
 
 Some checks call the Groq API and therefore require a valid `.env` file and internet access.
 
