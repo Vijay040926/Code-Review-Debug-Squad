@@ -1,0 +1,22 @@
+
+# API keys and secrets
+.env
+.streamlit/secrets.toml
+
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated ChromaDB database
+chroma_db/
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

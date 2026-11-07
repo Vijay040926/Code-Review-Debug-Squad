@@ -1,0 +1,59 @@
+
+PYTHON CODING GUIDELINES
+
+1. NAMING CONVENTIONS
+- Use descriptive names for variables and functions.
+- Use snake_case for Python functions and variables.
+- Use PascalCase for class names.
+- Avoid single-character variable names except for simple loops.
+- Use uppercase names for constants.
+
+2. CODE READABILITY
+- Use consistent indentation of four spaces.
+- Separate logical sections using blank lines.
+- Avoid unnecessarily complicated expressions.
+- Write comments when they clarify non-obvious logic.
+- Keep functions focused on a single responsibility.
+
+3. ERROR HANDLING
+- Use try-except blocks when an operation may raise an expected exception.
+- Avoid broad exception handling unless necessary.
+- Raise meaningful exceptions for invalid inputs.
+- Validate user inputs before processing them.
+- Do not silently ignore errors.
+
+4. FUNCTION DESIGN
+- Keep functions small and focused.
+- Use meaningful function names.
+- Use return statements when a function should provide a result.
+- Avoid unnecessary global variables.
+- Use parameters instead of relying on external state.
+
+5. PYTHON BEST PRACTICES
+- Follow PEP 8 recommendations.
+- Use appropriate type hints where helpful.
+- Add docstrings to functions and classes when useful.
+- Avoid unnecessary code duplication.
+- Prefer readable code over unnecessarily clever solutions.
+
+6. PERFORMANCE
+- Avoid unnecessary loops and repeated computations.
+- Use appropriate built-in data structures.
+- Choose dictionaries and sets when efficient lookups are required.
+- Avoid unnecessary memory allocations.
+- Consider algorithmic time complexity.
+
+7. TESTING
+- Test normal input conditions.
+- Test boundary conditions.
+- Test empty inputs where applicable.
+- Test negative values when relevant.
+- Test invalid inputs and expected exceptions.
+- Use assertions to verify expected outputs.
+
+8. SECURITY
+- Validate external input.
+- Avoid executing untrusted code.
+- Never hardcode passwords or API keys.
+- Avoid unsafe functions such as eval() and exec().
+- Handle sensitive information carefully.
