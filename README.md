@@ -186,8 +186,6 @@ If `chroma_db/` is deleted, the application can rebuild the vector store from th
 
 ## 10. Optional component checks
 
-## Component Testing
-
 The `tests/` directory contains individual verification scripts used during development to check the functionality of the project's major components.
 
 | Test file | Component verified |
@@ -215,8 +213,6 @@ Some tests require an active internet connection and a valid Groq API key.
 
 These are development/verification scripts for checking individual components. They are not required to launch the Streamlit interface. Run a script from the project root with the virtual environment activated, for example:
 
-
-Some checks call the Groq API and therefore require a valid `.env` file and internet access.
 
 ## 11. Important execution and security limitations
 
